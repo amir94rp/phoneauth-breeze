@@ -1,0 +1,24 @@
+{
+    "name": "phoneauth/breeze",
+    "description": "publish phoneauth requirments",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "amir94rp",
+            "email": "rp.amir94@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PhoneAuth\\Breeze": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PhoneAuth\\Breeze\\BreezeServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
