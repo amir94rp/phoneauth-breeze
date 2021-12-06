@@ -38,6 +38,7 @@ class InstallCommand extends Command
         $this->requireComposerPackages(
             'inertiajs/inertia-laravel:^0.4.3',
             'laravel/sanctum:^2.6',
+            'phoneauth/support',
             'doctrine/dbal:^3.2',
             'tightenco/ziggy:^1.0');
 
