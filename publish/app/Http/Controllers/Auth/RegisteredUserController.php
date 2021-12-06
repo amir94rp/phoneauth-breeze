@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Validation\Rules;
 use Inertia\Inertia;
-use PhoneAuth\Auth\Verification\PhoneNumber;
+use PhoneAuth\Support\Verification\PhoneNumber;
 
 class RegisteredUserController extends Controller
 {

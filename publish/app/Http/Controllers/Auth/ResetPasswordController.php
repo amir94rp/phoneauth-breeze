@@ -11,7 +11,7 @@ use Illuminate\Support\Str;
 use Illuminate\Validation\ValidationException;
 use Inertia\Inertia;
 use Illuminate\Validation\Rules;
-use PhoneAuth\Auth\Verification\PhoneNumber;
+use PhoneAuth\Support\Verification\PhoneNumber;
 
 class ResetPasswordController extends Controller
 {

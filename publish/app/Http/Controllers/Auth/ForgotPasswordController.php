@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Validation\ValidationException;
-use PhoneAuth\Auth\Verification\PhoneNumber;
+use PhoneAuth\Support\Verification\PhoneNumber;
 use Inertia\Inertia;
 
 class ForgotPasswordController extends Controller

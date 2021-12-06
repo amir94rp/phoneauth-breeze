@@ -7,7 +7,7 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 use Inertia\Inertia;
-use PhoneAuth\Auth\Verification\PhoneNumber;
+use PhoneAuth\Support\Verification\PhoneNumber;
 
 class PhoneVerificationController extends Controller
 {

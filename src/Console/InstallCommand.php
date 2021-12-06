@@ -80,7 +80,7 @@ class InstallCommand extends Command
 
         // Middleware...
         $this->installMiddlewareAfter('SubstituteBindings::class',
-            '\app\Http\Middleware\HandleInertiaRequests::class');
+            '\App\Http\Middleware\HandleInertiaRequests::class');
 
         $this->addRouteMiddleware('EnsureEmailIsVerified::class','phoneauth' ,
             "\PhoneAuth\Support\Middleware\EnsureNumberIsVerified::class");

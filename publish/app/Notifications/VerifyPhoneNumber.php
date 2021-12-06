@@ -5,7 +5,7 @@ namespace App\Notifications;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Notification;
-use PhoneAuth\Helpers\Channels\TextMessageChannel;
+use PhoneAuth\Support\Helpers\Channels\TextMessageChannel;
 
 class VerifyPhoneNumber extends Notification
 {
