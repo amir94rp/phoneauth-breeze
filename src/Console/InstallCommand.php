@@ -38,7 +38,7 @@ class InstallCommand extends Command
         $this->requireComposerPackages(
             'inertiajs/inertia-laravel:^0.4.3',
             'laravel/sanctum:^2.6',
-            'phoneauth/support',
+            'phoneauth/support:^1.0',
             'doctrine/dbal:^3.2',
             'tightenco/ziggy:^1.0');
 
@@ -120,7 +120,7 @@ class InstallCommand extends Command
         copy(__DIR__.'/../../publish/jsconfig.json', base_path('jsconfig.json'));
 
         //resource
-        copy(__DIR__.'/../../publish/resources/CSS/app.css', resource_path('css/app.css'));
+        copy(__DIR__.'/../../publish/resources/css/app.css', resource_path('css/app.css'));
         copy(__DIR__.'/../../publish/resources/js/app.js', resource_path('js/app.js'));
 
         //migrations

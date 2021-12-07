@@ -24,7 +24,6 @@
         }
     },
     "require": {
-        "php": ">=7.3",
-        "phoneauth/support" : ">=1"
+        "php": ">=7.3"
     }
 }
