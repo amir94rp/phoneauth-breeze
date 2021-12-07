@@ -1,10 +1,10 @@
 {
     "name": "phoneauth/breeze",
-    "description": "publish phoneauth requirments",
+    "description": "This package built on top of Laravel Breeze and changes laravel default email based authentication to phone number auth",
     "license": "MIT",
     "authors": [
         {
-            "name": "amir94rp",
+            "name": "amir ramezanpour",
             "email": "rp.amir94@gmail.com"
         }
     ],
