@@ -35,7 +35,8 @@
                 Already registered?
             </Link>
 
-            <PhoneAuthButton class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+            <PhoneAuthButton class="ltr:ml-4 rtl:mr-4" :class="{ 'opacity-25': form.processing }"
+                             :disabled="form.processing">
                 Register
             </PhoneAuthButton>
         </div>
@@ -65,11 +66,11 @@ export default {
     data() {
         return {
             form: this.$inertia.form({
-                name: '',
-                number: '',
-                password: '',
-                password_confirmation: '',
-                terms: false,
+                name        : '',
+                number      : '',
+                password    : '',
+                password_confirmation   : '',
+                terms       : false,
             })
         }
     },

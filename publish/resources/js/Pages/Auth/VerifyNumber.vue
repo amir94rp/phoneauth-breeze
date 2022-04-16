@@ -5,16 +5,15 @@
         {{ status }}
     </div>
 
-    <div class="mb-4 text-sm text-gray-600">
-        Thanks for signing up! Before getting started, could you verify your phone number by typing the token we just
-        text to you? If you didn't receive the text message, we will gladly send you another.
-    </div>
-
     <form @submit.prevent="submitResend" class="mb-4">
-        <div class="mt-4 flex items-center justify-between">
-            <PhoneAuthButton :class="{ 'opacity-25': resend.processing }" :disabled="resend.processing">
-                RESEND VERIFICATION TOKEN
-            </PhoneAuthButton>
+        <div class="text-sm text-gray-600">
+            Thanks for signing up! Before getting started, could you verify your phone number by typing the token we just
+            text to you? If you didn't receive the text message,
+            <button class="text-blue-400 hover:text-blue-600" :class="{ 'opacity-25': resend.processing }"
+                    :disabled="resend.processing">
+                click here
+            </button>,
+            we will gladly send you another.
         </div>
     </form>
 

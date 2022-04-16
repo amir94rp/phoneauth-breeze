@@ -40,10 +40,10 @@ return [
 
     'channels' =>   [
         'sms'   => [
-            'key'       => '',
-            'url'       => 'http://rest.ippanel.com/v1/',
-            'origin'    => '',
-            'pattern'   => ''
+            'url'           => 'https://RestfulSms.com/api/',
+            'secret'        => env('SMSIR_SECRET'),
+            'apikey'        => env('SMSIR_APIKEY'),
+            'verifyPattern' => env('SMSIR_PATTERN')
         ]
     ],
 

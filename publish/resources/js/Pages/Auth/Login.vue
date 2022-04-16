@@ -23,7 +23,7 @@
         <div class="block mt-4">
             <label class="flex items-center">
                 <PhoneAuthCheckbox name="remember" v-model:checked="form.remember" />
-                <span class="ml-2 text-sm text-gray-600">Remember me</span>
+                <span class="ltr:ml-2 rtl:mr-2 text-sm text-gray-600">Remember me</span>
             </label>
         </div>
 
@@ -33,7 +33,8 @@
                 Forgot your password?
             </Link>
 
-            <PhoneAuthButton class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+            <PhoneAuthButton class="ltr:ml-4 rtl:mr-4" :class="{ 'opacity-25': form.processing }"
+                             :disabled="form.processing">
                 Log in
             </PhoneAuthButton>
         </div>
@@ -47,7 +48,6 @@ import PhoneAuthGuestLayout from '@/Layouts/Guest.vue'
 import PhoneAuthInput from '@/Components/Input.vue'
 import PhoneAuthInputError from '@/Components/InputError.vue'
 import PhoneAuthLabel from '@/Components/Label.vue'
-import PhoneAuthValidationErrors from '@/Components/ValidationErrors.vue'
 import { Head, Link } from '@inertiajs/inertia-vue3';
 
 export default {
@@ -59,7 +59,6 @@ export default {
         PhoneAuthInput,
         PhoneAuthLabel,
         PhoneAuthInputError,
-        PhoneAuthValidationErrors,
         Head,
         Link,
     },
@@ -72,9 +71,9 @@ export default {
     data() {
         return {
             form: this.$inertia.form({
-                number: '',
-                password: '',
-                remember: false
+                number      : '',
+                password    : '',
+                remember    : false
             })
         }
     },

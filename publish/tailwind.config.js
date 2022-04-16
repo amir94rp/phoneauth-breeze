@@ -20,7 +20,14 @@ module.exports = {
         extend: {
             opacity: ['disabled'],
         },
+        space   : ['responsive', 'direction'],
+        margin  : ['responsive', 'direction'],
+        padding : ['responsive', 'direction'],
+        divide  : ['responsive', 'direction'],
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('tailwindcss-dir')()
+    ],
 };

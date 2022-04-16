@@ -10,11 +10,11 @@
             <PhoneAuthLabel for="password" value="Password" />
             <PhoneAuthInput id="password" type="password" class="mt-1 block w-full" v-model="form.password"
                          required autocomplete="current-password" autofocus />
-            <PhoneAuthInputError :message="form.errors.number" class="mt-2"/>
+            <PhoneAuthInputError :message="form.errors.password" class="mt-2"/>
         </div>
 
         <div class="flex justify-end mt-4">
-            <PhoneAuthButton class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
+            <PhoneAuthButton :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
                 Confirm
             </PhoneAuthButton>
         </div>

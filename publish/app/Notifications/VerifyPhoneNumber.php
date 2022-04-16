@@ -49,14 +49,18 @@ class VerifyPhoneNumber extends Notification
     {
         return [
             'message'   => [
-                'pattern_code'  => config('phoneauth.channels.sms.pattern'),
-                'originator'    => config('phoneauth.channels.sms.origin'),
-                'recipient'     => "$notifiable->number" ,
-                'values'        =>[
-                    'order_id'  => "$this->token"
+                'TemplateId'    => config('phoneauth.channels.sms.verifyPattern'),
+                'UserApiKey'    => config('phoneauth.channels.sms.apikey'),
+                'SecretKey'     => config('phoneauth.channels.sms.secret'),
+                'Mobile'        => "$notifiable->number" ,
+                'ParameterArray'    => [
+                    [
+                        'Parameter'         => 'verificationCode',
+                        'ParameterValue'    => $this->token
+                    ]
                 ]
             ],
-            'url'       => 'messages/patterns/send'
+            'url'       => 'UltraFastSend/UserApiKey'
         ];
     }
 
